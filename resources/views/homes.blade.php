@@ -9,6 +9,7 @@
         @vite(['resources/scss/app.scss', 'resources/js/app.js'])
     </head>
     <body>
+      {{-- navbar --}}
         <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
             <div class="container flex justify-content-between">
               <a class="navbar-link" href="{{route("home")}}">
@@ -47,7 +48,20 @@
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
+          <section class="container hero">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-lg-6">
+                <h1>The Laravel <br/> Comunity Forum</h1>
+                <p class="mb-4">Empowering the Laravel community to connect, share and learn.</p>
+                <a class="btn btn-primary me-2 mb-2 mb-lg-0" href="">Sign Up</a>
+                <a class="btn btn-secondary mb-2 mb-lg-0" href="">Join Discussion</a>
+              </div>
+              <div class="col-12 col-lg-6 h-315px order-first order-lg-last mb-3 mb-lg-0">
+                <img class="hero-image float-lg-end" src="{{url("assets/images/Hero.png")}}" alt="Hero Image">
+              </div>
+            </div>
+          </section>
 
           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </body>
